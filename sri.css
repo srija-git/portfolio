@@ -1,0 +1,157 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+header .logo {
+    font-size: 36px; 
+    color: #00aaff; 
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Navigation Styling */
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+nav a:first-child {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+/* active links become blue */
+nav a:hover, nav a.active {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+/* Main Section Styling */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    height: 80vh;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.home-img {
+    flex: 1;
+    text-align: center;
+}
+
+.home-img img {
+    width: 300px; 
+    height: 300px; /* Height set to 300px */
+    border-radius: 50%; /* round profile picture */
+    border: none;
+}
+
+.home-content {
+    max-width: 600px;
+    flex: 2;
+    padding-left: 40px; /* Space between image and text */
+    text-align: center; /* Center the text */
+}
+
+/* "Hi, it's Srija" Section */
+.big-text {
+    font-size: 40px; /* Normal size for the heading */
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.big-text span {
+    color: #00aaff; /* Blue color for the name */
+}
+
+.typing-text {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00aaff;
+}
+
+/* About Text */
+.about-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Social icons styling */
+.social-icons {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px; 
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px; /*padding for spacing */
+    transition: all 0.3s ease;
+}
+
+/* Add blue shadow effect*/
+.social-icons a:hover {
+    color: #00aaff;
+    background-color: #000;
+    text-shadow: 0 0 15px rgba(0, 170, 255, 0.8); /* Blue shadow effect */
+}
+
+.social-icons a:active {
+    color: #00aaff;
+    text-shadow: 0 0 15px rgba(0, 170, 255, 0.8); /* Blue shadow effect when clicked */
+}
+
+/* "Hire Me" button style with shadow effect */
+.btn {
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #00aaff;
+    border-radius: 30px; /* Round button shape */
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px; /* Adjusted margin for positioning */
+    transition: all 0.3s ease;
+}
+
+/*"Hire Me" button */
+.btn:hover {
+    background-color: #00aaff;
+    color: black;
+    text-shadow: 0 0 20px rgba(0, 170, 255, 0.8); /* Blue shadow effect */
+}
+
+.btn:active {
+    text-shadow: 0 0 20px rgba(0, 170, 255, 0.8); /* Blue shadow effect when clicked */
+}
